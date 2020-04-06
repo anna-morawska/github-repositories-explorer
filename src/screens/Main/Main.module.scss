@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+@import "../../styles/media-query.scss";
+
+.main {
+  margin: 8rem 3rem;
+  display: flex;
+  height: calc(100% - 16rem);
+  min-height: 80%;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: $white;
+  padding: 1.5rem;
+}
+
+.resultsContainer {
+  overflow: scroll;
+}
+
+.button {
+  margin-bottom: 0;
+  margin-left: 2rem;
+
+  @include respond(phone) {
+    margin-left: 0rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}

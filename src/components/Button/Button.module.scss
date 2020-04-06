@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.button {
+  background-color: $blue;
+  color: $white;
+  border: none;
+  font-size: $default-font-size;
+  padding: 1.5rem 1rem;
+  min-width: 15rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+}

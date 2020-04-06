@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+.card {
+  background-color: $dark-grey;
+  min-height: 8rem;
+  padding: 1rem 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: $default-font-size;
+  font-weight: bold;
+  margin: 0;
+  word-break: break-all;
+  hyphens: auto;
+}
+
+.description {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  padding-left: 1rem;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-left: 0.3rem;
+    background-image: url("../../assets/star.svg");
+  }
+}

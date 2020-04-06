@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+
+.message {
+  font-size: $default-font-size;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.info {
+  color: $font-medium;
+}
+
+.error,
+.warning {
+  &::before {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.error {
+  color: $font-error;
+
+  &::before {
+    fill: $font-error;
+    background-image: url("../../assets/error.svg");
+  }
+}
+
+.warning {
+  color: $font-warning;
+
+  &::before {
+    background-image: url("../../assets/warning.svg");
+  }
+}

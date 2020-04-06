@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.input {
+  background-color: $light-grey;
+  padding: 1.5rem 1rem;
+  border: 1px solid $dark-grey;
+  color: $font-dark;
+  font-size: $default-font-size;
+  width: 100%;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.clear {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 50%;
+  transform: translate(0, 50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../assets/close.svg");
+}
